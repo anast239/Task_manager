@@ -1,0 +1,29 @@
+{% extends 'tasks_manager/base.html' %}
+
+{% block header %}
+  <h1>Tasks</h1>
+{% endblock header %}
+
+{% block content %}
+
+  {% for task in tasks %}
+    <div class="panel panel-info">
+      <div class="panel-heading" >
+          {{ task.due_date|date:'d M Y' }}
+	  <span class="badge">{{ task.category }}</span>
+	  <small>
+	    <a href="{% url 'tasks_manager:edit_task' task.id %}">
+	      edit task</a>
+	  </small>
+	  <br>{{ task.time|time:'H:i' }} 
+      </div>
+      <div class="panel-body">
+          {{ task|linebreaks }}
+      </div>
+    </div>   
+  {% empty %}
+    <li>No tasks have been added yet</li>
+  {% endfor %}
+
+
+{% endblock content %}
