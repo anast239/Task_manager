@@ -16,3 +16,8 @@ pip install -r requirements.txt
 ```
 python manage.py migrate
 ```
+<li>Use the task manager</li>
+
+```
+python manage.py runserver
+```
