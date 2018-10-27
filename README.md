@@ -1,4 +1,4 @@
 # Task_manager
 Task manager to create to-do list
 To start using Task Manager:
-1. 
+*Clone the repo
