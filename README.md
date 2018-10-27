@@ -3,6 +3,10 @@
 To start using Task Manager:
 <li>Clone the repository</li>
 ```
+code block
+```
+
+```
 git clone git@github.com:anast239/Task-manager.git
 ```
 <li>Install packages</li>
